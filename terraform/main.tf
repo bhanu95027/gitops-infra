@@ -16,7 +16,6 @@ provider "aws" {
 resource "aws_ecr_repository" "app_ecr" {
   name                 = "devops-sample-app"
   image_tag_mutability = "MUTABLE"
-  force_destroy        = true
 }
 
 # 2. Minimal Custom VPC for Testing
